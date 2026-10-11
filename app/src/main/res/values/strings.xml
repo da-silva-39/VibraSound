@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">VibraSound</string>
+    <string name="app_tagline">A tua musica, o teu ritmo</string>
+
+    <!-- Navegacao -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_library">Biblioteca</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_playlists">Listas</string>
+    <string name="nav_settings">Definicoes</string>
+
+    <!-- Ecrã inicial -->
+    <string name="greeting_morning">Bom dia!</string>
+    <string name="greeting_afternoon">Boa tarde!</string>
+    <string name="greeting_night">Boa noite!</string>
+    <string name="home_subtitle">Pronto para ouvir algo?</string>
+    <string name="songs_available">musicas disponiveis</string>
+    <string name="recently_played">Reproduzidas recentemente</string>
+    <string name="favorite_songs">Musicas favoritas</string>
+    <string name="no_recent">Ainda nao ouviste nenhuma musica.</string>
+    <string name="no_favorites_yet">Ainda nao tens favoritos.</string>
+    <string name="quick_access">Acesso rapido</string>
+    <string name="song_count_hint">musicas disponiveis</string>
+    <string name="quick_favorites">Favoritos</string>
+    <string name="quick_playlists">Listas</string>
+    <string name="section_recent">Reproduzidas recentemente</string>
+    <string name="section_favorites">Favoritas</string>
+
+    <!-- Biblioteca -->
+    <string name="library_title">Biblioteca</string>
+    <string name="search_hint">Pesquisar titulo, artista ou album</string>
+    <string name="sort_name">Nome</string>
+    <string name="sort_artist">Artista</string>
+    <string name="sort_duration">Duracao</string>
+    <string name="sort_by">Ordenar por: %1$s</string>
+    <string name="refresh">Atualizar</string>
+    <string name="unknown_artist">Artista desconhecido</string>
+    <string name="unknown_album">Album desconhecido</string>
+    <string name="no_music">Nenhuma musica encontrada no dispositivo.</string>
+    <string name="no_music_hint">Copia ficheiros de audio (MP3, M4A, WAV) para a pasta Music do telemovel e toca em Atualizar.</string>
+    <string name="no_results">Nenhum resultado para a tua pesquisa.</string>
+
+    <!-- Permissoes -->
+    <string name="perm_title">Permissao necessaria</string>
+    <string name="perm_audio_msg">Para mostrar a tua musica, o VibraSound precisa de acesso aos ficheiros de audio do dispositivo.</string>
+    <string name="perm_grant">Conceder permissao</string>
+    <string name="perm_denied_msg">Permissao negada. Ativa o acesso a musica nas definicoes da aplicacao para continuar.</string>
+    <string name="perm_open_settings">Abrir definicoes</string>
+
+    <!-- Ecrã de reproducao -->
+    <string name="now_playing">A tocar agora</string>
+    <string name="no_song_selected">Nenhuma musica selecionada</string>
+    <string name="favorite">Favorito</string>
+    <string name="unfavorite">Remover favorito</string>
+    <string name="shuffle_on">Aleatorio ligado</string>
+    <string name="shuffle_off">Aleatorio desligado</string>
+    <string name="repeat_off">Repetir desligado</string>
+    <string name="repeat_one">Repetir musica</string>
+    <string name="repeat_all">Repetir fila</string>
+    <string name="added_to_favorites">Adicionada aos favoritos</string>
+    <string name="removed_from_favorites">Removida dos favoritos</string>
+
+    <!-- Favoritos -->
+    <string name="favorites_title">Favoritos</string>
+    <string name="no_favorites">Ainda nao adicionaste favoritos.</string>
+    <string name="no_favorites_hint">Toca no coracao de uma musica para a guardar aqui.</string>
+
+    <!-- Listas de reproducao -->
+    <string name="playlists_title">Listas de reproducao</string>
+    <string name="create_playlist">Criar lista</string>
+    <string name="playlist_name_hint">Nome da lista</string>
+    <string name="create">Criar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Eliminar</string>
+    <string name="delete_playlist">Eliminar lista</string>
+    <string name="delete_playlist_confirm">Eliminar a lista \"%1$s\"?</string>
+    <string name="add_to_playlist">Adicionar a lista</string>
+    <string name="remove_from_playlist">Remover da lista</string>
+    <string name="play_all">Reproduzir tudo</string>
+    <string name="no_playlists">Ainda nao criaste listas de reproducao.</string>
+    <string name="no_playlists_hint">Cria a tua primeira lista para organizar a musica.</string>
+    <string name="playlist_empty">Esta lista ainda nao tem musicas.</string>
+    <string name="playlist_empty_hint">Adiciona musicas a partir da biblioteca ou dos favoritos.</string>
+    <string name="song_count">%1$d musicas</string>
+    <string name="playlist_created">Lista criada</string>
+    <string name="playlist_exists">Ja existe uma lista com esse nome.</string>
+    <string name="playlist_name_required">Escreve um nome para a lista.</string>
+    <string name="added_to_playlist">Adicionada a lista</string>
+    <string name="already_in_playlist">Essa musica ja esta na lista.</string>
+    <string name="choose_playlist">Escolhe uma lista</string>
+
+    <!-- Definicoes -->
+    <string name="settings_title">Definicoes</string>
+    <string name="settings_dark_theme">Tema escuro</string>
+    <string name="settings_dark_theme_desc">Usa o tema escuro da aplicacao</string>
+    <string name="settings_autoplay">Reproducao automatica</string>
+    <string name="settings_autoplay_desc">Avancar automaticamente para a proxima musica</string>
+    <string name="settings_clear_history">Limpar historico</string>
+    <string name="settings_clear_history_desc">Apaga as musicas reproduzidas recentemente</string>
+    <string name="history_cleared">Historico limpo</string>
+    <string name="settings_about">Sobre a aplicacao</string>
+    <string name="about_text">VibraSound e um reprodutor de musica local desenvolvido em Java com APIs nativas do Android. Demonstra o uso de Service, MediaPlayer, MediaSession, MediaStore, notificacoes e SQLite.</string>
+    <string name="version_label">Versao %1$s</string>
+    <string name="clear">Limpar</string>
+
+    <!-- Geral -->
+    <string name="ok">OK</string>
+    <string name="back">Voltar</string>
+    <string name="add_to_playlist_title">Adicionar a lista</string>
+    <string name="new_playlist">Nova lista</string>
+    <string name="close">Fechar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="loading">A carregar musica...</string>
+    <string name="error_generic">Ocorreu um erro. Tenta novamente.</string>
+    <string name="play">Reproduzir</string>
+    <string name="pause">Pausar</string>
+    <string name="next">Seguinte</string>
+    <string name="previous">Anterior</string>
+
+    <!-- Notificacao -->
+    <string name="notif_channel_name">Reproducao multimédia</string>
+    <string name="notif_channel_desc">Controlos do reprodutor VibraSound</string>
+    <string name="notif_playing">A tocar</string>
+    <string name="notif_paused">Em pausa</string>
+</resources>

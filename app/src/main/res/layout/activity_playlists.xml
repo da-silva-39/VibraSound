@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingTop="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_lg"
+        android:paddingBottom="@dimen/space_sm">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/playlists_title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_screen_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/playlists_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_pill"
+            android:drawableStart="@drawable/ic_add"
+            android:drawablePadding="@dimen/space_xs"
+            android:drawableTint="@color/white"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/space_md"
+            android:paddingTop="@dimen/space_sm"
+            android:paddingEnd="@dimen/space_md"
+            android:paddingBottom="@dimen/space_sm"
+            android:text="@string/create_playlist"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_caption"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/playlists_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:paddingTop="@dimen/space_xs"
+            android:paddingBottom="@dimen/space_sm"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/playlists_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/space_xl"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_empty_circle"
+                android:padding="20dp"
+                android:src="@drawable/ic_playlists"
+                android:tint="@color/accent_orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:text="@string/no_playlists"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:gravity="center"
+                android:text="@string/no_playlists_hint"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <include layout="@layout/include_mini_player" />
+
+    <include layout="@layout/include_bottom_nav" />
+</LinearLayout>

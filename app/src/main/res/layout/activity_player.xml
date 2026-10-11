@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_md">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_sm"
+        android:paddingTop="@dimen/space_md"
+        android:paddingEnd="@dimen/space_md">
+
+        <ImageView
+            android:id="@+id/player_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:padding="10dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/text_primary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/now_playing"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_caption"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/player_favorite"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/favorite"
+            android:padding="10dp"
+            android:src="@drawable/ic_favorite_border"
+            android:tint="@color/text_secondary" />
+    </LinearLayout>
+
+    <!-- Capa -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/player_art"
+            android:layout_width="@dimen/artwork_large"
+            android:layout_height="@dimen/artwork_large"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_artwork_large"
+            android:contentDescription="@string/now_playing"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <!-- Informacao da musica -->
+    <TextView
+        android:id="@+id/player_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_lg"
+        android:gravity="center"
+        android:text="@string/no_song_selected"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_lg"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_body" />
+
+    <TextView
+        android:id="@+id/player_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_lg"
+        android:textColor="@color/text_disabled"
+        android:textSize="@dimen/text_small" />
+
+    <!-- Barra de progresso -->
+    <SeekBar
+        android:id="@+id/player_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_md"
+        android:layout_marginTop="@dimen/space_md"
+        android:layout_marginEnd="@dimen/space_md"
+        android:progressDrawable="@drawable/progress_seekbar"
+        android:thumb="@drawable/thumb_seekbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_lg">
+
+        <TextView
+            android:id="@+id/player_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0:00"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/player_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+    <!-- Controlos de reproducao -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_md"
+        android:paddingEnd="@dimen/space_md">
+
+        <ImageView
+            android:id="@+id/player_shuffle"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/shuffle_off"
+            android:padding="10dp"
+            android:src="@drawable/ic_shuffle"
+            android:tint="@color/text_secondary" />
+
+        <ImageView
+            android:id="@+id/player_prev"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/previous"
+            android:padding="12dp"
+            android:src="@drawable/ic_previous"
+            android:tint="@color/text_primary" />
+
+        <ImageView
+            android:id="@+id/player_play"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:background="@drawable/bg_button_primary"
+            android:contentDescription="@string/play"
+            android:padding="16dp"
+            android:src="@drawable/ic_play"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/player_next"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/next"
+            android:padding="12dp"
+            android:src="@drawable/ic_next"
+            android:tint="@color/text_primary" />
+
+        <ImageView
+            android:id="@+id/player_repeat"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/repeat_off"
+            android:padding="10dp"
+            android:src="@drawable/ic_repeat"
+            android:tint="@color/text_secondary" />
+    </LinearLayout>
+
+    <!-- Controlo de volume (stream de musica do sistema) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_lg">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_volume"
+            android:tint="@color/text_secondary" />
+
+        <SeekBar
+            android:id="@+id/player_volume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/progress_seekbar"
+            android:thumb="@drawable/thumb_seekbar" />
+    </LinearLayout>
+</LinearLayout>

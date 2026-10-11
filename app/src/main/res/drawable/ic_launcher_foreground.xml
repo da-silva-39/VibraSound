@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Barra de equalizador central (parte visivel do icone adaptativo). -->
+    <path
+        android:fillColor="#FF7A1A"
+        android:pathData="M36,46 h7 v18 a3.5,3.5 0 0,1 -7,0 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M50.5,36 h7 v38 a3.5,3.5 0 0,1 -7,0 Z" />
+    <path
+        android:fillColor="#22D3EE"
+        android:pathData="M65,50 h7 v14 a3.5,3.5 0 0,1 -7,0 Z" />
+</vector>

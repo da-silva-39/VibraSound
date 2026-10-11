@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingTop="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_lg"
+        android:paddingBottom="@dimen/space_sm"
+        android:text="@string/favorites_title"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_screen_title"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/favorites_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@color/divider"
+            android:dividerHeight="1dp"
+            android:paddingBottom="@dimen/space_sm"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/favorites_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/space_xl"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_empty_circle"
+                android:padding="20dp"
+                android:src="@drawable/ic_favorite_border"
+                android:tint="@color/accent_orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:text="@string/no_favorites"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:gravity="center"
+                android:text="@string/no_favorites_hint"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_body" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <include layout="@layout/include_mini_player" />
+
+    <include layout="@layout/include_bottom_nav" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linha de lista de reproducao. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/space_md"
+    android:layout_marginTop="@dimen/space_xs"
+    android:layout_marginEnd="@dimen/space_md"
+    android:layout_marginBottom="@dimen/space_sm"
+    android:background="@drawable/bg_card_clickable"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_md">
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_empty_circle"
+        android:padding="10dp"
+        android:src="@drawable/ic_playlists"
+        android:tint="@color/accent_orange" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_md"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/playlist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/ok"
+        android:padding="10dp"
+        android:src="@drawable/ic_more"
+        android:tint="@color/text_secondary" />
+</LinearLayout>

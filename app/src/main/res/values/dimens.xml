@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+
+    <dimen name="card_radius">18dp</dimen>
+    <dimen name="card_radius_sm">12dp</dimen>
+
+    <dimen name="text_title">22sp</dimen>
+    <dimen name="text_screen_title">26sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_caption">13sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+    <dimen name="mini_player_height">64dp</dimen>
+    <dimen name="bottom_nav_height">60dp</dimen>
+    <dimen name="artwork_small">52dp</dimen>
+    <dimen name="artwork_medium">64dp</dimen>
+    <dimen name="artwork_large">280dp</dimen>
+    <dimen name="control_button">56dp</dimen>
+    <dimen name="control_button_small">44dp</dimen>
+</resources>
