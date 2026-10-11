@@ -13,7 +13,6 @@ import android.widget.TextView;
  */
 public class SettingsActivity extends BaseActivity {
 
-    private Switch switchDark;
     private Switch switchAutoplay;
 
     @Override
@@ -24,18 +23,7 @@ public class SettingsActivity extends BaseActivity {
         setupMiniPlayer();
         setupBottomNav(TAB_SETTINGS);
 
-        switchDark = findViewById(R.id.switch_dark);
         switchAutoplay = findViewById(R.id.switch_autoplay);
-
-        switchDark.setChecked(repository.isDarkTheme());
-        switchDark.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(android.widget.CompoundButton buttonView, boolean isChecked) {
-                repository.setDarkTheme(isChecked);
-                // Recria a Activity para aplicar o novo tema.
-                recreate();
-            }
-        });
 
         switchAutoplay.setChecked(repository.isAutoplayEnabled());
         switchAutoplay.setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener() {

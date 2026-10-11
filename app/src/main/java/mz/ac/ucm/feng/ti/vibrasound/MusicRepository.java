@@ -24,7 +24,6 @@ import java.util.Locale;
 public class MusicRepository {
 
     public static final String PREFS = "vibrasound_prefs";
-    public static final String KEY_DARK_THEME = "dark_theme";
     public static final String KEY_AUTOPLAY = "autoplay";
     public static final String KEY_LAST_MUSIC_ID = "last_music_id";
     public static final String KEY_SHUFFLE = "shuffle";
@@ -241,14 +240,6 @@ public class MusicRepository {
     // ------------------------------------------------------------------
     // Preferencias
     // ------------------------------------------------------------------
-
-    public boolean isDarkTheme() {
-        return prefs.getBoolean(KEY_DARK_THEME, true);
-    }
-
-    public void setDarkTheme(boolean dark) {
-        prefs.edit().putBoolean(KEY_DARK_THEME, dark).apply();
-    }
 
     public boolean isAutoplayEnabled() {
         return prefs.getBoolean(KEY_AUTOPLAY, true);

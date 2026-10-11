@@ -31,50 +31,6 @@
             android:paddingEnd="@dimen/space_lg"
             android:paddingBottom="@dimen/space_lg">
 
-            <!-- Tema escuro -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_card"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="@dimen/space_md">
-
-                <ImageView
-                    android:layout_width="26dp"
-                    android:layout_height="26dp"
-                    android:src="@drawable/ic_dark_mode"
-                    android:tint="@color/accent_orange" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/space_md"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/settings_dark_theme"
-                        android:textColor="@color/text_primary"
-                        android:textSize="@dimen/text_body"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/settings_dark_theme_desc"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="@dimen/text_small" />
-                </LinearLayout>
-
-                <Switch
-                    android:id="@+id/switch_dark"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-
             <!-- Reproducao automatica -->
             <LinearLayout
                 android:layout_width="match_parent"

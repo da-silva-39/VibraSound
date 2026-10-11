@@ -6,7 +6,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Build;
@@ -49,12 +48,6 @@ public abstract class BaseActivity extends Activity implements MusicService.List
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Aplica o tema antes de criar a janela.
-        SharedPreferences prefs = getSharedPreferences(MusicRepository.PREFS, MODE_PRIVATE);
-        boolean dark = prefs.getBoolean(MusicRepository.KEY_DARK_THEME, true);
-        if (!dark) {
-            setTheme(R.style.Theme_VibraSound_Light);
-        }
         super.onCreate(savedInstanceState);
         repository = new MusicRepository(this);
     }

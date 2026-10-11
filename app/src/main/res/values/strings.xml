@@ -13,7 +13,7 @@
     <string name="greeting_morning">Bom dia!</string>
     <string name="greeting_afternoon">Boa tarde!</string>
     <string name="greeting_night">Boa noite!</string>
-    <string name="home_subtitle">Pronto para ouvir algo?</string>
+    <string name="home_subtitle">Ouca suas musicas</string>
     <string name="songs_available">musicas disponiveis</string>
     <string name="recently_played">Reproduzidas recentemente</string>
     <string name="favorite_songs">Musicas favoritas</string>
@@ -92,15 +92,13 @@
 
     <!-- Definicoes -->
     <string name="settings_title">Definicoes</string>
-    <string name="settings_dark_theme">Tema escuro</string>
-    <string name="settings_dark_theme_desc">Usa o tema escuro da aplicacao</string>
     <string name="settings_autoplay">Reproducao automatica</string>
     <string name="settings_autoplay_desc">Avancar automaticamente para a proxima musica</string>
     <string name="settings_clear_history">Limpar historico</string>
     <string name="settings_clear_history_desc">Apaga as musicas reproduzidas recentemente</string>
     <string name="history_cleared">Historico limpo</string>
     <string name="settings_about">Sobre a aplicacao</string>
-    <string name="about_text">VibraSound e um reprodutor de musica local desenvolvido em Java com APIs nativas do Android. Demonstra o uso de Service, MediaPlayer, MediaSession, MediaStore, notificacoes e SQLite.</string>
+    <string name="about_text">VibraSound e um reprodutor de musica local. Demonstra o uso de Service, Feito por Jose Da Silva, Acymin diniz, Claire Jambaia, pra Programacao Movel - Dr: Bento Arao</string>
     <string name="version_label">Versao %1$s</string>
     <string name="clear">Limpar</string>
 

@@ -22,12 +22,6 @@
     <color name="error">#F87171</color>
     <color name="warning">#FBBF24</color>
 
-    <!-- Tema claro (opcional nas definicoes). -->
-    <color name="light_bg">#F4F6FB</color>
-    <color name="light_surface">#FFFFFF</color>
-    <color name="light_text_primary">#111827</color>
-    <color name="light_text_secondary">#5B6478</color>
-
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>
